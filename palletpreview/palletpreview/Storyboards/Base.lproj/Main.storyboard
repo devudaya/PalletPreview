@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SbN-1j-9AC">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Boxes Quantity-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GeneratePalletVC" customModule="palletpreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="bSG-8x-UMW">
+                                <rect key="frame" x="16" y="187" width="361" height="241"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="lcb-Ug-xIU">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Small Boxes Qty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0l-mt-hTQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="16.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Swr-m6-Mai">
+                                                <rect key="frame" x="0.0" y="25.666666666666661" width="361" height="33.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="4R8-nS-aBp"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ant-Au-Rkn">
+                                        <rect key="frame" x="0.0" y="91" width="361" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medium Boxes Qty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpd-rl-juW">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJ5-6s-Dj2">
+                                                <rect key="frame" x="0.0" y="25" width="361" height="34"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="EXX-6v-0J8"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lp8-fI-DXD">
+                                        <rect key="frame" x="0.0" y="182" width="361" height="59"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Large Boxes Qty:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6G-Oe-oe8">
+                                                <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEL-Uk-BiF">
+                                                <rect key="frame" x="0.0" y="25" width="361" height="34"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ozC-qH-EiA"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAF-TK-R0K">
+                                <rect key="frame" x="16" y="492" width="361" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="bCo-mC-Gib"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Generate ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJI-hi-22m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TAF-TK-R0K" secondAttribute="trailing" constant="16" id="7JK-C8-Pw0"/>
+                            <constraint firstItem="TAF-TK-R0K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="M5f-KB-TGz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bSG-8x-UMW" secondAttribute="trailing" constant="16" id="RVJ-rk-JLW"/>
+                            <constraint firstItem="TAF-TK-R0K" firstAttribute="top" secondItem="bSG-8x-UMW" secondAttribute="bottom" constant="64" id="bSi-dE-2ib"/>
+                            <constraint firstItem="bSG-8x-UMW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="eFh-xe-nTv"/>
+                            <constraint firstItem="bSG-8x-UMW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ean-Gy-YAj"/>
+                            <constraint firstItem="bSG-8x-UMW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p5n-4l-ppN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Boxes Quantity" id="dv2-uV-7ul"/>
+                    <connections>
+                        <outlet property="largeBoxTextField" destination="bEL-Uk-BiF" id="XcE-IS-2X9"/>
+                        <outlet property="mediumBoxTextField" destination="jJ5-6s-Dj2" id="8O0-rh-s6Z"/>
+                        <outlet property="smallBoxTextField" destination="Swr-m6-Mai" id="vFH-gk-W6K"/>
+                        <segue destination="AET-bC-FHn" kind="show" identifier="palletpreviewsegue" id="Zkl-Y1-UF2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1125.9541984732823" y="272.53521126760563"/>
+        </scene>
+        <!--Preview-->
+        <scene sceneID="myd-3e-YMB">
+            <objects>
+                <viewController storyboardIdentifier="palletpreview" id="AET-bC-FHn" customClass="PalletVC" customModule="palletpreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ii3-26-pPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhY-9z-hxW">
+                                <rect key="frame" x="16" y="219" width="361" height="361"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nhY-9z-hxW" secondAttribute="height" multiplier="1:1" id="fNN-CU-qPj"/>
+                                </constraints>
+                            </sceneKitView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LP3-ma-fg1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nhY-9z-hxW" firstAttribute="leading" secondItem="LP3-ma-fg1" secondAttribute="leading" constant="16" id="7P3-dA-3vc"/>
+                            <constraint firstItem="nhY-9z-hxW" firstAttribute="height" secondItem="LP3-ma-fg1" secondAttribute="height" multiplier="0.443439" id="i5X-jz-bbc"/>
+                            <constraint firstItem="nhY-9z-hxW" firstAttribute="centerX" secondItem="Ii3-26-pPZ" secondAttribute="centerX" id="jOO-xr-SrU"/>
+                            <constraint firstItem="nhY-9z-hxW" firstAttribute="top" secondItem="LP3-ma-fg1" secondAttribute="top" constant="64" id="yFm-tY-DHe"/>
+                            <constraint firstItem="LP3-ma-fg1" firstAttribute="trailing" secondItem="nhY-9z-hxW" secondAttribute="trailing" constant="16" id="zGU-NJ-5s0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Preview" id="nd4-Re-8rQ"/>
+                    <connections>
+                        <outlet property="scnView" destination="nhY-9z-hxW" id="LEl-Lg-lr5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgi-ar-BSp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150.3816793893129" y="272.53521126760563"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7tj-zp-XQC">
+            <objects>
+                <navigationController id="SbN-1j-9AC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ipq-ZC-2Bw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3MX-aE-xpV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaM-oP-rmf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="273"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
